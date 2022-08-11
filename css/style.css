@@ -1,0 +1,218 @@
+/* GOOGLE FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --main-color:#EF7819;
+    --black: #141215;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+
+html::-webkit-scrollbar-track{
+    background: var(--black);
+}
+
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--black);
+}
+
+/*******************************************************************************\
+                                        HEADER
+\*******************************************************************************/
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,.8);
+    padding: 3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.header .logo i {
+    padding-right: 0.5rem;
+    color: var(--main-color);
+    animation: floating 2.3s infinite;
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform:translateY(0rem)
+    }
+
+    50% {
+        transform:translateY(.7rem)
+    }
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: #FFF;
+    margin: 0 1rem;
+}
+
+.header .navbar a.active,
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+.header .icons a,
+.header .icons div {
+    font-size: 2.5rem;
+    color: #FFF;
+    margin-left: 2rem;
+    cursor:pointer;
+}
+
+.header .icons a:hover,
+.header .icons div:hover{
+    color:var(--main-color)
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: #FFF;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.header .search-form.active{
+    right: 2rem;
+    opacity: 1;
+    transition:.4s linear ;
+}
+
+.header .search-form input {
+    width: 100%;
+    padding: 0 1.5%;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .search-form label {
+    font-size: 2rem;
+    padding-right: 1rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search-form label:hover {
+    color: var(--main-color);
+}
+
+.header.active{
+    padding: 2rem 9%;
+    background: #222;
+}
+
+/*******************************************************************************\
+                                        HEADER
+\*******************************************************************************/
+
+
+
+/*******************************************************************************\
+                                        MEDIA QUERIES
+\*******************************************************************************/
+
+@media (max-width:991px){
+    html {
+        font-weight: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+
+    .header.active{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .search-form {
+        width: 90%;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #222;
+        clip-path: polygon(0 0, 100% 0 , 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar  a {
+        display:block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:450px){
+    html {
+        font-weight: 50%;
+    }
+}
+
+
+
+body{
+    height: 300rem;
+}
