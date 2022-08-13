@@ -32,7 +32,7 @@ window.onload = () => {
     }
 }
 
-// SWIPERJS
+// SWIPERJS HOME
 
 var swiper = new Swiper(".home-slider", {
     spaceBetween: 20,
@@ -47,5 +47,31 @@ var swiper = new Swiper(".home-slider", {
           delay: 5500,
           disableOnInteraction: false,
         },
+    },
+  );
+
+
+// SWIPERJS PRODUCTS 
+
+  var swiper = new Swiper(".products-slider", {
+    spaceBetween: 20,
+    loop:true,
+    centeredSlides: true,
+        autoplay: {
+          delay: 5500,
+          disableOnInteraction: false,
+        },
+        grabCursor:true,
+        breakpoints: {
+            0 : {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            991: {
+              slidesPerView: 3,
+            },
+          },
     },
   );

@@ -65,6 +65,16 @@ section{
     letter-spacing: .1rem;
 }
 
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #FFF;
+}
+
+.heading span{ 
+    color: var(--main-color);
+}
 /*******************************************************************************\
                                         HEADER
 \*******************************************************************************/
@@ -242,6 +252,97 @@ section{
 .home .home-slider:hover .swiper-button-prev{
     opacity: 1;
 }
+
+/*******************************************************************************\
+                                        PRODUCT
+\*******************************************************************************/
+
+.products .products-slider .box {
+    position: relative;
+    width: 35rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.products .products-slider .box .image {
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.products .products-slider .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.products .products-slider .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.products .products-slider .box .icons {
+    position: absolute;
+    top: 0;
+    right: -6rem;
+    z-index: 1;
+}
+
+.products .products-slider .box:hover .icons {
+    right: 1rem;
+}
+
+.products .products-slider .box .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--black);
+    background: #FFF;
+    margin-top: 1rem;
+    display: block;
+}
+
+.products .products-slider .box .icons a:hover {
+    background: var(--main-color);
+    color: #FFF;
+}
+
+.products .products-slider .box .content {
+    padding: 1rem;
+}
+
+.products .products-slider .box .content h3 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #FFF;
+}
+
+.products .products-slider .box .content .price {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #FFF;
+}
+
+.products .products-slider .box .content .price span {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--main-color);
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*******************************************************************************\
                                         HEADER
