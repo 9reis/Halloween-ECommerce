@@ -10,6 +10,12 @@
     <!-- FONT AWESOME  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <!-- SWIPER JS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <title>Happy Halloween</title>
 </head>
 <body>
@@ -41,9 +47,54 @@
     </header>
     <!-- HEADER session END -->
   
-    <!--  session START -->
-    
-    <!--  session END -->
+    <!-- HOME session START -->
+    <section class="home" id="home">
+         
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box" style="background:url(img/home-slider-1.jpg)">
+                    <div class="content">
+                        <h3>Happy Halloween</h3>
+                        <p>special discount</p>
+                        <div class="button">
+                            <a href="#" class="btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" style="background:url(img/home-slider-2.jpg)">
+                    <div class="content">
+                        <h3>upto 30% off</h3>
+                        <p>on all costumes</p>
+                        <div class="button">
+                            <a href="#" class="btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="swiper-slide box" style="background:url(img/home-slider-3.jpg)">
+                    <div class="content">
+                        <h3>limited offer</h3>
+                        <p>don't miss it</p>
+                        <div class="button">
+                            <a href="#" class="btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- PAGINACAO -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+        
+    </section>
+
+    <!-- HOME session END -->
 
     <!--  session START -->
     
@@ -56,6 +107,10 @@
     <!--  session START -->
     
     <!--  session END -->
+
+
+    <!-- SWIPERJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- JAVA SCRIPT -->
     <script src="js/script.js"></script>

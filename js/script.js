@@ -22,3 +22,30 @@ window.onscroll = () => {
         document.querySelector('.header').classList.remove('active');
     }
 }
+
+window.onload = () => {
+
+    if(window.scrollY > 0){
+        document.querySelector('.header').classList.add('active');
+    }else{
+        document.querySelector('.header').classList.remove('active');
+    }
+}
+
+// SWIPERJS
+
+var swiper = new Swiper(".home-slider", {
+    spaceBetween: 20,
+    effect: "fade",
+    loop:true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    centeredSlides: true,
+        autoplay: {
+          delay: 5500,
+          disableOnInteraction: false,
+        },
+    },
+  );

@@ -44,6 +44,27 @@ body{
     background: var(--black);
 }
 
+section{
+    padding: 2rem 9%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    background: #FFF;
+    font-weight: 500;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--main-color);
+    color: #FFF;
+    letter-spacing: .1rem;
+}
+
 /*******************************************************************************\
                                         HEADER
 \*******************************************************************************/
@@ -53,7 +74,7 @@ body{
     right: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.5);
     padding: 3rem 9%;
     display: flex;
     align-items: center;
@@ -153,6 +174,76 @@ body{
 }
 
 /*******************************************************************************\
+                                        HOME
+\*******************************************************************************/
+.home{
+    padding: 0;
+}
+
+.home .home-slider .box {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.home .home-slider .box .content {
+    text-align: center;
+}
+
+.home .home-slider .box .content h3 {
+    font-size: 5rem;
+    color: #FFF;
+    transition-delay: .2s;
+}
+
+.home .home-slider .box .content p {
+    font-size: 3rem;
+    color: #FFF;
+    transition-delay: .4s;
+    padding: 1rem 0;
+}
+
+.home .home-slider .box .content .button {
+    transition: .6s;
+}
+
+.home .home-slider .box .content > * {
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+.home .home-slider .swiper-slide-active .content > * {
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+.home .home-slider .swiper-button-next {
+    right: 4rem;
+    color: #FFF;
+    opacity: 0;
+}
+
+.home .home-slider .swiper-button-prev {
+    left: 4rem;
+    color: #FFF;
+    opacity: 0;
+}
+
+.home .home-slider .swiper-button-next:hover,
+.home .home-slider .swiper-button-prev:hover {
+    color: var(--main-color);
+}
+
+.home .home-slider:hover .swiper-button-next,
+.home .home-slider:hover .swiper-button-prev{
+    opacity: 1;
+}
+
+/*******************************************************************************\
                                         HEADER
 \*******************************************************************************/
 
@@ -171,6 +262,10 @@ body{
     }
 
     .header.active{
+        padding: 2rem;
+    }
+
+    section{
         padding: 2rem;
     }
 }
@@ -209,10 +304,10 @@ body{
     html {
         font-weight: 50%;
     }
-}
 
-
-
-body{
-    height: 300rem;
+    .home .home-slider .swiper-button-next,
+    .home .home-slider .swiper-button-prev{
+        display: none;
+    }
+    
 }
