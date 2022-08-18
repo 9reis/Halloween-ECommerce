@@ -440,8 +440,54 @@ section{
     text-decoration: line-through;
 }
 
+/*******************************************************************************\
+                                        CONTACT
+\*******************************************************************************/
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .row .map {
+    flex: 1 1 42rem;
+    width: 100%;
+}
+
+.contact .row form {
+    flex: 1 1 42rem;
+    padding: 2rem;
+    text-align: center;
+    background: #222;
+}
+
+.contact .row form h3{
+    font-size:3rem ;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.contact .row form .box {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    background: var(--black);
+    color: #FFF;
+    font-size:1.6rem;
+    text-transform: none;
+    margin: .7rem 0;
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
 
 
+
+
+
+
+  
 
 
 
