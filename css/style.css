@@ -547,19 +547,60 @@ section{
     padding-right: 0.5rem;
 }
 
-
-
-  
-
-
-
-
-
 /*******************************************************************************\
-                                        HEADER
+                                        FOOTER 
 \*******************************************************************************/
 
+.footer {
+    background: #000;
+}
 
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #FFF;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    font-size: 1.4rem;
+    color: #AAA;
+    padding: 1rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover {
+    color: var(--main-color);
+} 
+
+.footer .box-container .box a i { 
+    padding-right: .5rem;
+    color: var(--main-color);
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+    color: #FFF;
+}
+
+.footer .credit {
+    padding: 1rem;
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+    border-top: .1rem solid #FFF3;
+    font-size: 1.1rem;
+    color: #AAA;
+    text-align: center;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
 
 /*******************************************************************************\
                                         MEDIA QUERIES
